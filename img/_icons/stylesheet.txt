@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -10px;
+}
+
+.sprite-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -53px;
+}
+
+.sprite-icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -96px;
+}
+
+.sprite-icon-fb {
+    width: 78px;
+    height: 78px;
+    background-position: -10px -131px;
+}
+
+.sprite-icon-in {
+    width: 78px;
+    height: 78px;
+    background-position: -10px -229px;
+}
+
+.sprite-icon-vk {
+    width: 78px;
+    height: 78px;
+    background-position: -10px -327px;
+}
