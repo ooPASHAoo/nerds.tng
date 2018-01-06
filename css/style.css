@@ -20,6 +20,7 @@ body {
     width: 1160px;
     height: 430px;
     margin: 0 auto;
+    background-color: rgba(100,100,100,0.2);
 }
 
 .slider input[type="radio"] {
@@ -84,15 +85,15 @@ body {
 }
 
 #slide-1 {
-    background-image: url(../img/slide1.png);
+    background-image: url(../img/slide-1.png);
 }
 
 #slide-2 {
-    background-image: url(../img/slide2.png);
+    background-image: url(../img/slide-2.png);
 }
 
 #slide-3 {
-    background-image: url(../img/slide3.png);
+    background-image: url(../img/slide-3.png);
 }
 
 #btn-1:checked ~ .slider_controls label[for="btn-1"],

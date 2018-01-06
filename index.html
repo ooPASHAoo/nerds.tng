@@ -8,62 +8,135 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
 <header class="header-main">
-
-
-    <!--<nav>-->
-    <!--<a href="#"><img class="logo" src="img/logo-header.png"></a>-->
-    <!--<ul>-->
-    <!--<li><a href="#">Студия</a></li>-->
-    <!--<li><a href="#">Клиенты</a></li>-->
-    <!--<li><a href="#">Магазин</a></li>-->
-    <!--<li><a href="#">Контакты</a></li>-->
-    <!--</ul>-->
-    <!--</nav>-->
-    <!--<section class="user-block">-->
-    <!--<a class="basket" href="#">Корзина</a>-->
-    <!--</section>-->
-
-
-    <div class="slider">
-        <input id="btn-1" type="radio" name="toggle">
-        <input id="btn-2" type="radio" name="toggle" checked>
-        <input id="btn-3" type="radio" name="toggle">
-        <div class="slider_controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-        </div>
-        <div class="slide" id="slide-1">
-            <span class="slide_title">Долго, дорого,<br>скрупулезно.</span>
-            <p class="slide_description">Математически выверенный дизайн<br>
-                для вашего сайта или мобильного приложения.</p>
-            <a class="btn slide_btn" href="#">Узнать больше</a>
-        </div>
-        <div class="slide" id="slide-2">
-            <span class="slide_title">Любим математику<br>как никто другой</span>
-            <p class="slide_description">Никакого креатива, только математические формулы<br>
-                для расчета идеальных пропорций.</p>
-            <a class="btn slide_btn" href="#">Узнать больше</a>
-        </div>
-        <div class="slide" id="slide-3">
-            <span class="slide_title">Только ночь,<br>только хардкор</span>
-            <p class="slide_description">Работать днем, как все? Мы против этого.<br>
-                Ближе к полуночи работа только начинается.</p>
-            <a class="btn slide_btn" href="#">Узнать больше</a>
+    <div class="layout-center">
+        <nav class="nav-main">
+            <a href="#"><img class="logo" src="img/logo-header.png"></a>
+            <ul>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <section class="user-block">
+            <a class="basket" href="#">Корзина</a>
+        </section>
+        <div class="slider">
+            <input id="btn-1" type="radio" name="toggle" checked>
+            <input id="btn-2" type="radio" name="toggle">
+            <input id="btn-3" type="radio" name="toggle">
+            <div class="slider_controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+            </div>
+            <div class="slide" id="slide-1">
+                <span class="slide_title">Долго, дорого,<br>скрупулезно.</span>
+                <p class="slide_description">Математически выверенный дизайн<br>
+                    для вашего сайта или мобильного приложения.</p>
+                <a class="btn slide_btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide" id="slide-2">
+                <span class="slide_title">Любим математику<br>как никто другой</span>
+                <p class="slide_description">Никакого креатива, только математические формулы<br>
+                    для расчета идеальных пропорций.</p>
+                <a class="btn slide_btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide" id="slide-3">
+                <span class="slide_title">Только ночь,<br>только хардкор</span>
+                <p class="slide_description">Работать днем, как все? Мы против этого.<br>
+                    Ближе к полуночи работа только начинается.</p>
+                <a class="btn slide_btn" href="#">Узнать больше</a>
+            </div>
         </div>
     </div>
-
-
 </header>
 
 <main class="main-index">
+    <div class="layout-center">
+        <section class="services">
+            <article class="service">
+                <img src="img/service-1.jpg">
+                <h2>Веб-сайты</h2>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <a class="btn btn-red" href="#">Заказать</a>
+            </article>
+            <article class="service">
+                <img src="img/service-2.jpg">
+                <h2>Приложения</h2>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="btn btn-green" href="#">Заказать</a>
+            </article>
+            <article class="service">
+                <img src="img/service-3.jpg">
+                <h2>Презентации</h2>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="btn btn-yellow" href="#">Заказать</a>
+            </article>
+        </section>
+        <section class="about-us">
+            <div class="column-left">
+                <span>Мы — маленькая, но гордая дизайн-студия из Краснодара.</span>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+                    покладая рук, как роботы.</p>
+                <b>Выполняем заказы на разработку:</b>
+                <ul>
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="column-right">
+                <img src="img/logo.jpg">
+                <b>с 2004 года Любим точность во всем:</b>
+                <ul>
+                    <li>
+                        <span>146<sup>%</sup></span>
+                        <p>Уровень самоотдачи</p>
+                    </li>
+                    <li>
+                        <span>100<sup>%</sup></span>
+                        <p>Соблюдение сроков</p>
+                    </li>
+                    <li>
+                        <span>50<sup>%</sup></span>
+                        <p>Минимальная предоплата</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="clients">
+            <ul>
+                <li><img src="img/logo-1.png"></li>
+                <li><img src="img/logo-2.png"></li>
+                <li><img src="img/logo-3.png"></li>
+                <li><img src="img/logo-4.png"></li>
+            </ul>
+        </section>
+    </div>
 </main>
 
 <footer class="footer-main">
+    <section class="map">
+        <div class="contacts">
+            <b>NЁRDS DESIGN STUDIO</b>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="btn" href="#">Напишите нам</a>
+        </div>
+    </section>
+    <div class="layout-center">
+        <section class="social">
+            <a class="btn-social vk">Вконтакте</a>
+            <a class="btn-social fb">Фейсбук</a>
+            <a class="btn-social in">Инстаграм</a>
+            <div class="social-promo">
+                <span>Давайте дружить, это выгодно!</span>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </section>
+    </div>
 </footer>
-
 </body>
 </html>
