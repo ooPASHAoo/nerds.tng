@@ -101,15 +101,8 @@ body {
     background-color: #c1c1c1;
 }
 
-#btn-1:checked ~ #slide-1 {
-    display: block;
-}
-
-#btn-2:checked ~ #slide-2 {
-    display: block;
-}
-
+#btn-1:checked ~ #slide-1,
+#btn-2:checked ~ #slide-2,
 #btn-3:checked ~ #slide-3 {
     display: block;
 }
-
