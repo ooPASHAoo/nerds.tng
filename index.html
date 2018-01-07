@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script> </script> <!-- QUEST: transition google chrome / opera  -->
+    <script> console.log("BugFix"); </script> <!-- QUEST: transition google chrome / opera  -->
 </head>
 <body>
 <header class="header-main">
@@ -147,5 +147,30 @@
         </section>
     </div>
 </footer>
+
+<section class="modal-feedback">
+    <button class="modal-feedback_close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-feedback_header">Напишите нам</h2>
+    <form class="feedback-form">
+        <div class="feedback-form_group clearfix">
+            <div class="feedback-form_layout">
+                <label for="feedback-form_name">Ваше имя:</label>
+                <input id="feedback-form_name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="feedback-form_layout">
+                <label for="feedback-form_e-mail">Ваш e-mail:</label>
+                <input id="feedback-form_e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
+            </div>
+        </div>
+        <div class="feedback-form_group">
+            <label for="feedback-form_text">Текст письма:</label>
+            <textarea id="feedback-form_text" name="text" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="feedback-form_send btn">Отправить</button>
+    </form>
+</section>
+
+<section class="modal-overlay"></section>
+
 </body>
 </html>

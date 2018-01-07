@@ -164,7 +164,7 @@ body {
 
 .user-block__basket:active {
     /*color: black;*/
-    color: rgba(0,0,0,0.3); /* opacity for basket*/
+    color: rgba(0, 0, 0, 0.3); /* opacity for basket*/
 }
 
 .user-block__basket::before {
@@ -626,9 +626,118 @@ body {
     color: #444444;
 }
 
+/* ============= */
+/* === modal === */
+/* ============= */
 
+/* - .modal-feedback - */
 
+.modal-feedback {
+    position: fixed;
+    z-index: 110;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 760px;
+    padding: 68px 100px 82px 100px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
 
+.modal-feedback_close {
+    position: absolute;
+    top: 76px;
+    right: 86px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    font-size: 0;
+    /*background-color: red;*/
+}
 
+.modal-feedback_close::before,
+.modal-feedback_close::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 0;
+    width: 28px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffcccd;
+}
 
+.modal-feedback_close::before {
+    transform: rotate(45deg);
+}
+
+.modal-feedback_close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-feedback_header {
+    margin: 0;
+    font-size: 45px;
+    line-height: 46px;
+    color: black;
+}
+
+/* .feedback-form */
+
+.feedback-form {
+    margin-top: 36px;
+}
+
+.feedback-form_group {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.feedback-form_layout {
+    float: left;
+    width: 360px;
+}
+
+.feedback-form_layout:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 6px;
+    padding: 14px;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+}
+
+.feedback-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.feedback-form_send {
+    margin-top: 40px;
+    padding: 16px 80px;
+}
+
+/* - .modal-overlay - */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
