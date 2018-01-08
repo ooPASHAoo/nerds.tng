@@ -190,9 +190,13 @@ li {
 
 /*<editor-fold desc="=== MAIN ===">*/
 
+/*<editor-fold desc="= index.html =">*/
+
 .main-index {
     padding-bottom: 80px;
 }
+
+/*</editor-fold>*/
 
 /*<editor-fold desc="--- .slider">*/
 
@@ -514,6 +518,36 @@ li {
 .clients__client img:hover {
     opacity: 1;
     transform: scale(1.1, 1.1);
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="= catalog.html =">*/
+
+.main-catalog {
+
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="--- .aside-catalog ---">*/
+
+.aside-catalog {
+    float: left;
+    width: 260px;
+    min-height: 200px;  /* temp */
+    background-color: deepskyblue;
+}
+
+/*</editor-fold>*/
+
+/*<editor-fold desc="--- .shop ---">*/
+
+.shop {
+    float: right;
+    width: 760px;
+    min-height: 300px;  /* temp */
+    background-color: green;
 }
 
 /*</editor-fold>*/
