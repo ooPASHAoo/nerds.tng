@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header class="header-main">
+<header class="header-main header-catalog">
     <div class="layout-center">
 
         <nav class="nav-main">
@@ -18,7 +18,7 @@
             <ul class="nav-main__menu">
                 <li class="nav-main__item"><a href="#">Студия</a></li>
                 <li class="nav-main__item"><a href="#">Клиенты</a></li>
-                <li class="nav-main__item"><a href="#">Магазин</a></li>
+                <li class="nav-main__item is-active"><a href="#">Магазин</a></li>
                 <li class="nav-main__item"><a href="#">Контакты</a></li>
             </ul>
         </nav>
@@ -37,47 +37,70 @@
 
         <aside class="aside-catalog">
             <form class="catalog-form">
-                <div class="grid-type">
-                    <h3 class="grid-type__header">Сетка:</h3>
-                    <ul class="grid-type__list">
-                        <li class="grid-type__item"><label><input type="radio" value="adaptive">
-                            <span class="grid-type___radio"></span>Адаптированя</label></li>
-                        <li class="grid-type__item"><label><input type="radio" value="fixed">
-                            <span class="grid-type___radio"></span>Фиксированная</label></li>
-                        <li class="grid-type__item"><label><input type="radio" value="rubber">
-                            <span class="grid-type___radio"></span>Резиновая</label></li>
-                    </ul>
+
+                <h3 class="catalog-form__header">Стоимость:</h3>
+                <div class="price-filter">
+                    <div class="price-filter__bar-controls">
+                        <div class="price-filter__bar">
+                            <div class="price-filter__fill">
+                                <div class="price-filter__toggle _min"></div>
+                                <div class="price-filter__toggle _max"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-filter__value-controls clearfix">
+                        <div class="price-filter__layout _left">
+                            <label class="price-filter__label _min">
+                                от <input class="price-filter__value _min" type="text" value="0">
+                            </label>
+                        </div>
+                        <div class="price-filter__layout _right">
+                            <label class="price-filter__label _max">
+                                до <input class="price-filter__value _max" type="text" value="15 000">
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-type">
-                    <h3 class="feature-type__header">Особенности:</h3>
-                    <ul class="feature-type__list">
-                        <li class="feature-type__item"><label><input type="checkbox" name="slider">
-                            <span class="feature-type___checkbox"></span>Слайдер</label></li>
-                        <li class="feature-type__item"><label><input type="checkbox" name="features">
-                            <span class="feature-type___checkbox"></span>Блок преимуществ</label></li>
-                        <li class="feature-type__item"><label><input type="checkbox" name="news">
-                            <span class="feature-type___checkbox"></span>Новости</label></li>
-                        <li class="feature-type__item"><label><input type="checkbox" name="gallery">
-                            <span class="feature-type___checkbox"></span>Галлерея</label></li>
-                        <li class="feature-type__item"><label><input type="checkbox" name="basket">
-                            <span class="feature-type___checkbox"></span>Корзина</label></li>
-                    </ul>
-                </div>
-                <button class="catalog-form_btn btn -gray" type="button">Показать</button>
+
+                <h3 class="catalog-form__header">Сетка:</h3>
+                <ul class="catalog-form__list">
+                    <li class="catalog-form__item"><label><input type="radio" name="grid" value="adaptive">
+                        <span class="catalog-form___radio"></span>Адаптивная</label></li>
+                    <li class="catalog-form__item"><label><input type="radio" name="grid" value="fixed">
+                        <span class="catalog-form___radio"></span>Фиксированная</label></li>
+                    <li class="catalog-form__item"><label><input type="radio" name="grid" value="rubber">
+                        <span class="catalog-form___radio"></span>Резиновая</label></li>
+                </ul>
+
+                <h3 class="catalog-form__header">Особенности:</h3>
+                <ul class="catalog-form__list">
+                    <li class="catalog-form__item"><label><input type="checkbox" name="slider">
+                        <span class="catalog-form___checkbox"></span>Слайдер</label></li>
+                    <li class="catalog-form__item"><label><input type="checkbox" name="features">
+                        <span class="catalog-form___checkbox"></span>Блок преимуществ</label></li>
+                    <li class="catalog-form__item"><label><input type="checkbox" name="news">
+                        <span class="catalog-form___checkbox"></span>Новости</label></li>
+                    <li class="catalog-form__item"><label><input type="checkbox" name="gallery">
+                        <span class="catalog-form___checkbox"></span>Галерея</label></li>
+                    <li class="catalog-form__item"><label><input type="checkbox" name="basket">
+                        <span class="catalog-form___checkbox"></span>Корзина</label></li>
+                </ul>
+
+                <button class="catalog-form__btn btn -gray" type="button">Показать</button>
             </form>
         </aside>
 
         <div class="shop">
-            <section class="sort-type">
-                <h3 class="sort-type__header">Сортировать</h3>
+            <section class="sort-type clearfix">
+                <h3 class="sort-type__header">Сортировать:</h3>
                 <ul class="sort-type__list">
-                    <li class="sort-type__item">По цене</li>
-                    <li class="sort-type__item">По типу</li>
-                    <li class="sort-type__item">По названию</li>
+                    <li class="sort-type__item is-active"><a href="#">По цене</a></li>
+                    <li class="sort-type__item"><a href="#">По типу</a></li>
+                    <li class="sort-type__item"><a href="#">По названию</a></li>
                 </ul>
                 <ul class="sort-type__mode">
-                    <li class="sort-type__up"></li>
-                    <li class="sort-type__down"></li>
+                    <li class="sort-type__down is-active"><a href="#">По убыванию</a></li>
+                    <li class="sort-type__up"><a href="#">По возрастанию</a></li>
                 </ul>
             </section>
             <section class="shop__items">
@@ -90,7 +113,7 @@
                     <img class="item__image" src="img/items/item1.jpg">
                     <div class="item__info">
                         <h2 class="item__header">Sedona</h2>
-                        <p class="item__description">Информационный сайт для туристов</p>
+                        <p class="item__description">Информационный сайт<br>для туристов</p>
                         <a class="item__btn btn" href="#">9 900 руб.</a>
                     </div>
                 </article>
@@ -116,7 +139,7 @@
                     <img class="item__image" src="img/items/item3.jpg">
                     <div class="item__info">
                         <h2 class="item__header">Barbershop</h2>
-                        <p class="item__description">Сайт салоны красоты.Для мужчин, да.</p>
+                        <p class="item__description">Сайт салоны красоты.<br>Для мужчин, да.</p>
                         <a class="item__btn btn" href="#">9 900 руб.</a>
                     </div>
                 </article>
@@ -129,7 +152,7 @@
                     <img class="item__image" src="img/items/item4.jpg">
                     <div class="item__info">
                         <h2 class="item__header">Mishka</h2>
-                        <p class="item__description">Интернет-магазин вязаных игрушек</p>
+                        <p class="item__description">Интернет-магазин<br>вязаных игрушек</p>
                         <a class="item__btn btn" href="#">9 900 руб.</a>
                     </div>
                 </article>
@@ -165,7 +188,7 @@
                 <a class="paginator__btn btn -gray is-active" href="#">1</a>
                 <a class="paginator__btn btn -gray" href="#">2</a>
                 <a class="paginator__btn btn -gray" href="#">3</a>
-                <a class="paginator__btn-next btn -gray" href="#">Следующая</a>
+                <a class="paginator__btn paginator__btn-next btn -gray" href="#">Следующая</a>
             </section>
         </div>
 
